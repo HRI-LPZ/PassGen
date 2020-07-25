@@ -1,17 +1,26 @@
 ## PassGen
 #Generador de contraseñas aleatorias y seguras
 ## Recursos
-'''
-pkg install pwgen -y
-pkg install figlet -y
-'''
-## Instalación
-'''
-git clone https://github.com/Anonymous-Lpz/PassGen
+```
+apt install git
+pkg install python2
+pip2 install requests
+```
+
+
+
+## Instalacion
+```
+git clone https://github.com/Anonymous-Lpz
 cd PassGen
-'''
+chmod +x PassGen.sh
+```
+
+
 ## Uso
-'''
-bash PassGen.sh
-'''
-DEJA TU ESTRELLA🌟
+```
+./PassGen.sh
+```
+
+
+## Por favor Deja Tu Estrella🌟
