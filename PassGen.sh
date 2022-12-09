@@ -1,6 +1,6 @@
 #!/bin/bash
 #El conocimiento es libre
-#Codificado Por: t.me/Anonymous_Lpz
+#Codificado Por: t.me/HRI_VZ
 
 #ruta de pwgen y figlet
 pwgen="/data/data/com.termux/files/usr/bin/pwgen"
@@ -26,16 +26,29 @@ echo $(clear)
 #Banner
 echo -e "\e[1;31m"
 figlet PassGen
-echo -e "\e[1;36m  Gᴇɴᴇʀᴀᴅᴏʀ ᴅᴇ ᴄᴏɴᴛʀᴀsᴇɴ̃ᴀs sᴇɢᴜʀᴀs."
+echo -e "\e[1;36mGenerador de contraseñas seguras para tus redes sociales y cualquier plataforma que necesite estar protegida."
 echo ""
-echo -ne "\e[1;32m<< ᴄᴜᴀɴᴛᴏs ᴄᴀʀᴀᴄᴛᴇʀᴇs? >> $ "
+echo -ne "\e[1;32m<< Cuantos caracteres >>  $ "
 read caracteres
 password=$(pwgen $caracteres 1)
+echo -e "\e[1;33mGenerando contraseña ..."
+sleep 1.5
+echo
 echo -e "\e[1;32m$password"
+echo
 echo "" >> PassGen.txt
-echo "Fecha: $(date)" >> PassGen.txt
+echo "Fecha-Creación: $(date)" >> PassGen.txt
 echo "Caracteres: $caracteres" >> PassGen.txt
 echo "Contraseña: $password" >> PassGen.txt
 echo "Generador: PassGen" >> PassGen.txt
 echo "" >> PassGen.txt
-echo -e "\e[1;31mʟᴀ ᴄᴏɴᴛʀᴀsᴇɴ̃ᴀ sᴇ ʜᴀ ɢᴜᴀʀᴅᴀᴅᴏ ᴇɴ ᴇʟ ᴀʀᴄʜɪᴠᴏ:\nPassGen.txt\e[0m"
+echo -e "\e[1;31mLa contraseña se a guardado en el archivo \nPassGen.txt \n\e[1;30mPara ver contraseñas guardadas ejecute: \e[1;37mcat PassGen.txt"
+
+
+
+
+
+
+
+
+
